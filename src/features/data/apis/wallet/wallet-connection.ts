@@ -133,8 +133,8 @@ export class WalletConnectionApi implements IWalletConnectionApi {
       wallets: this.getOnboardWalletInitializers(),
       appMetadata: {
         name: 'Billion Happiness',
-        icon: require(`../../../../images/bifi-logos/header-logo-notext.svg`).default,
-        logo: require(`../../../../images/bifi-logos/header-logo.svg`).default,
+        icon: require(`../../../../images/bifi-logos/bhc.png`).default,
+        logo: require(`../../../../images/bifi-logos/bhc.png`).default,
         description:
           'Beefy is a Decentralized, Multichain Yield Optimizer that allows its users to earn compound interest on their crypto holdings. Beefy earns you the highest APYs with safety and efficiency in mind.',
         gettingStartedGuide: 'https://docs.beefy.finance/',
