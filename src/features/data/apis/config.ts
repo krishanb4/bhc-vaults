@@ -43,6 +43,7 @@ const boostsByChainId: {
 } = {};
 for (const chainId in chainConfigs) {
   boostsByChainId[chainId] = require(`../../../config/boost/${chainId}`);
+  // boostsByChainId[chainId] = require(`../../../`);
   boostsByChainId[chainId].forEach(boost => {
     for (let i = 0; i < boost.partners.length; i++) {
       boost.partners[i] = boostPartners[boost.partners[i] as unknown as string];
