@@ -19,7 +19,7 @@ export const getEns = createAsyncThunk<
   { address: string | null },
   { state: BeefyState }
 >('wallet/getEns', async ({ address }, { getState }) => {
-  const bscChain = selectChainById(getState(), 'bsc');
+  const bscChain = selectChainById(getState(), 'ethw');
   const ensName = await getEnsAddress(address);
   if (ensName) return { ens: ensName };
   const sidName = await getSpaceIdAddress(address, bscChain);

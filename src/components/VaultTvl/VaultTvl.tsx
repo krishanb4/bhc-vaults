@@ -35,6 +35,8 @@ const _VaultTvl = connect((state: BeefyState, { vaultId }: { vaultId: VaultEntit
 })(({ vaultTvl, loading }: { isBoosted: boolean; vaultTvl: string; loading: boolean }) => {
   const { t } = useTranslation();
 
+
+
   return (
     <ValueBlock
       label={t('TVL')}

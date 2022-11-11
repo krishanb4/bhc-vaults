@@ -18,7 +18,7 @@ export const Filters = memo(function Filters() {
 
   return (
     <div className={classes.filters}>
-      {desktopView ? <ChainButtonFilter className={classes.chain} /> : null}
+      {/* {desktopView ? <ChainButtonFilter className={classes.chain} /> : null} */}
       <UserCategoryButtonFilter className={classes.userCategory} />
       {desktopView ? (
         <>
@@ -27,7 +27,7 @@ export const Filters = memo(function Filters() {
         </>
       ) : (
         <>
-          <ChainDropdownFilter className={classes.chain} />
+          {/* <ChainDropdownFilter className={classes.chain} /> */}
           <VaultTypeDropdownFilter className={classes.vaultType} />
         </>
       )}

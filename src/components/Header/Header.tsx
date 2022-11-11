@@ -92,7 +92,6 @@ const NavLinks = memo(function () {
 const ActiveChain = ({ networkId }: { networkId: string | null }) => {
   const classes = useStyles();
   const { t } = useTranslation();
-
   return (
     <div className={classes.chain} style={{ textDecoration: 'none' }}>
       {networkId === null ? null : (

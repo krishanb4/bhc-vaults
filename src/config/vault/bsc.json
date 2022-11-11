@@ -24,7 +24,7 @@
             "CONTRACTS_VERIFIED"
         ],
         "buyTokenUrl": "https://app.1inch.io/#/56/swap/BNB/BIFI",
-        "network": "ethw",
+        "network": "bsc",
         "createdAt": 1648477070
     },
     {

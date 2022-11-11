@@ -15,6 +15,7 @@ const mapStrategies = {
 };
 
 const correctPlatforms = {
+  lfgswap: 'LfgSwap',
   '0xdao': '0xDAO',
   '1inch': '1Inch',
   '2omb': '2omb',

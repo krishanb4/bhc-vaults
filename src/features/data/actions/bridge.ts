@@ -59,9 +59,9 @@ export const initiateBridgeForm = createAsyncThunk<
 >('bridge/initiateBridgeForm', async ({ walletAddress }, { getState }) => {
   const state = getState();
   const chainId = selectCurrentChainId(state);
-  const chain = selectChainById(state, chainId ?? 'bsc');
+  const chain = selectChainById(state, chainId ?? 'ethw');
   const allChains = selectAllChains(state);
-  const destChain = selectChainById(state, chain.id === 'bsc' ? 'fantom' : 'bsc');
+  const destChain = selectChainById(state, chain.id === 'ethw' ? 'fantom' : 'ethw');
   const balanceApi = await getBalanceApi(chain);
   const allowanceApi = await getAllowanceApi(chain);
   const bridgeApi = await getBridgeApi();
@@ -83,11 +83,11 @@ export const initiateBridgeForm = createAsyncThunk<
   const allowanceRes =
     walletAddress && spenderAddress && isTokenErc20(depositToken)
       ? await allowanceApi.fetchTokensAllowance(
-          state,
-          [depositToken],
-          walletAddress,
-          spenderAddress
-        )
+        state,
+        [depositToken],
+        walletAddress,
+        spenderAddress
+      )
       : [];
 
   let supportedChains = [chain.id];

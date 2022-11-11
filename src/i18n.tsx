@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next';
 
 export const localeToLanguageMap = {
   //  ar: 'العربية',
-  de: 'Deutsch',
+  // de: 'Deutsch',
   // el: 'Ελληνικά',
   en: 'English',
   // es: 'Español',
@@ -22,7 +22,7 @@ export const localeToLanguageMap = {
   // se: 'Svenska',
   // tr: 'Türkçe',
   // uk: 'Українська',
-  zh: '中文',
+  // zh: '中文',
 };
 
 const o_risksNstrats = code => {

@@ -30,6 +30,10 @@ export const VaultsStats = () => {
     setIsTvlModalOpen(false);
   }, [setIsTvlModalOpen]);
 
+  const tvldummy = '100M';
+  const vaultdummy = '50';
+  const buybackdummy = '$200';
+
   return (
     <Grid container className={classes.userStats}>
       <Box className={classes.stat}>
@@ -44,19 +48,22 @@ export const VaultsStats = () => {
           </div>
         </Box>
         <div className={classes.value}>
-          <ValueText value={formatBigUsd(totalTvl)} />
+          {/* <ValueText value={formatBigUsd(totalTvl)} /> */}
+          <ValueText value={tvldummy} />
         </div>
       </Box>
       <Box className={classes.stat}>
         <div className={classes.label}>{t('Vaults-Title')}</div>
         <div className={classes.value}>
-          <ValueText value={totalActiveVaults} />
+          {/* <ValueText value={totalActiveVaults} /> */}
+          <ValueText value={vaultdummy} />
         </div>
       </Box>
       <Box className={classes.stat}>
         <div className={classes.label}>{t('BuyBack')}</div>
         <div className={classes.value}>
-          <ValueText value={formatBigUsd(buyback)} />
+          {/* <ValueText value={formatBigUsd(buyback)} /> */}
+          <ValueText value={buybackdummy} />
         </div>
       </Box>
       <Modal open={isTvlModalOpen} onClose={handleTvlModalClose}>

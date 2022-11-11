@@ -50,7 +50,7 @@ const dataLoaderStatePending: LoaderState = {
   status: 'pending',
   error: null,
 };
-const dataLoaderStateInitByChainId: DataLoaderState['byChainId']['bsc'] = {
+const dataLoaderStateInitByChainId: DataLoaderState['byChainId']['ethw'] = {
   contractData: dataLoaderStateInit,
   balance: dataLoaderStateInit,
   allowance: dataLoaderStateInit,
@@ -125,7 +125,7 @@ function addGlobalAsyncThunkActions(
 function addByChainAsyncThunkActions<ActionParams extends { chainId: string }>(
   builder: ActionReducerMapBuilder<DataLoaderState>,
   action: AsyncThunk<unknown, ActionParams, unknown>,
-  stateKeys: Array<keyof DataLoaderState['byChainId']['bsc']>
+  stateKeys: Array<keyof DataLoaderState['byChainId']['ethw']>
 ) {
   builder.addCase(action.pending, (sliceState, action) => {
     const chainId = action.meta?.arg.chainId;

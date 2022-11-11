@@ -42,6 +42,8 @@ export function NetworkStatus() {
   const configErrors = useNetStatus(findConfigMatching, isRejected);
   const configPending = useNetStatus(findConfigMatching, isPending);
 
+  console.log(rpcErrors);
+
   const hasAnyError = rpcErrors.length > 0 || beefyErrors.length > 0 || configErrors.length > 0;
   const hasAnyLoading =
     rpcPending.length > 0 || beefyPending.length > 0 || configPending.length > 0;

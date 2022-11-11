@@ -337,7 +337,7 @@
     "NetworkStatus-Title-RpcError": "RPC Errors",
     "NetworkStatus-HelpText-Error": "Some data may display incorrectly",
     "NetworkStatus-RpcError": "{{chain}} RPC failed",
-    "NetworkStatus-BeefyError": "Beefy API failed",
+    "NetworkStatus-BeefyError": "BillionVault API failed",
     "Nexus-Title": "Nexus Mutual",
     "Nexus-Content": "Nexus Mutual is a blockchain-based alternative to traditional insurance. Become a mutual member to purchase comprehensive coverage for your Beefy positions.",
     "Solace-Title": "Solace",

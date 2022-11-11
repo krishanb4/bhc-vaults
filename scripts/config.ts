@@ -15,7 +15,7 @@ export const chainRpcs: Record<string, string> = Object.fromEntries(
   allChainIds.map(chainId => [
     chainId,
     process.env[`${addressBookToAppId(chainId).toUpperCase()}_RPC`] ||
-      lodash.sample(chainConfigs[chainId].rpc),
+    lodash.sample(chainConfigs[chainId].rpc),
   ])
 );
 

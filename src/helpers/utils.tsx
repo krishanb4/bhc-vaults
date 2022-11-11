@@ -20,6 +20,8 @@ export function isEmpty(key) {
 }
 
 export const bluechipTokens = [
+  'ETHW',
+  'WETHW',
   'WBTCe',
   'WETHe',
   'BTC',
